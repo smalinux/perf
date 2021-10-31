@@ -1,0 +1,13 @@
+[
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-o",
+            "printf-inst",
+            "printf-inst.c"
+        ],
+        "directory": "/home/smalinux/perf/examples",
+        "file": "printf-inst.c"
+    }
+]
