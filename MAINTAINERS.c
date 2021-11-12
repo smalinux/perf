@@ -1,3 +1,4 @@
+/*
 PERFORMANCE EVENTS SUBSYSTEM
 M:	Peter Zijlstra <peterz@infradead.org>
 M:	Ingo Molnar <mingo@redhat.com>
@@ -20,6 +21,7 @@ F:	arch/*/kernel/perf_callchain.c
 F:	arch/*/kernel/perf_event*.c
 F:	include/linux/perf_event.h
 F:	include/uapi/linux/perf_event.h
-F:	kernel/events/*
-F:	tools/lib/perf/
-F:	tools/perf/
+F:	kernel/events/* TODO
+F:	tools/lib/perf/ DONE
+F:	tools/perf/ DONE
+*/
