@@ -1,0 +1,32 @@
+From c59f44c313e7f0b73ac7ccf32bf6a8966e9207bd Mon Sep 17 00:00:00 2001
+From: Sohaib Mohamed <sohaib.amhmd@gmail.com>
+Date: Sat, 13 Nov 2021 02:38:17 +0200
+Subject: [PATCH] $ perf sched latency
+
+Fixes: cdce9d738b91 ("perf sched: Add sched latency profiling")
+
+Signed-off-by: Sohaib Mohamed <sohaib.amhmd@gmail.com>
+---
+ tools/perf/builtin-sched.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/tools/perf/builtin-sched.c b/tools/perf/builtin-sched.c
+index 4527f632ebe4..3932596e6268 100644
+--- a/tools/perf/builtin-sched.c
++++ b/tools/perf/builtin-sched.c
+@@ -1030,8 +1030,11 @@ static int thread_atoms_insert(struct perf_sched *sched, struct thread *thread)
+ 
+ static char sched_out_state(u64 prev_state)
+ {
+-	const char *str = TASK_STATE_TO_CHAR_STR;
++	char buff[260] = {0};
++	const char *str;
+ 
++	memcpy(buff, TASK_STATE_TO_CHAR_STR, sizeof(TASK_STATE_TO_CHAR_STR));
++	str = buff;
+ 	return str[prev_state];
+ }
+ 
+-- 
+2.25.1
+
