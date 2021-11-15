@@ -1,0 +1,55 @@
+android.txt >> OK
+Build.txt DONE
+build-xed.txt >> OK
+	callchain-overhead-calculation.txt
+db-export.txt OK
+examples.txt DONE
+	intel-bts.txt >> OK
+	intel-hybrid.txt >> OK
+	intel-pt.txt >> OK
+	itrace.txt >> OK
+jitdump-specification.txt >> OK
+jit-interface.txt >> OK
+perf-annotate.txt
+perf-archive.txt
+perf-bench.txt DONE
+perf-buildid-cache.txt
+perf-buildid-list.txt
+perf-c2c.txt
+perf-config.txt DONE
+perf-daemon.txt
+perf.data-directory-format.txt
+perf.data-file-format.txt
+perf-data.txt DONE
+perf-diff.txt DONE
+perf-dlfilter.txt
+perf-evlist.txt DONE
+perf-ftrace.txt
+perf-help.txt DONE
+perf-inject.txt
+	perf-intel-pt.txt
+perf-iostat.txt
+perf-kallsyms.txt
+perf-kmem.txt
+perf-kvm.txt
+perf-list.txt DONE
+perf-lock.txt
+perf-mem.txt DONE no thing special
+perf-probe.txt
+perf-record.txt .................. big
+perf-report.txt .................. big
+perf-sched.txt DONE
+perf-script-perl.txt
+perf-script-python.txt
+perf-script.txt DONE
+perf-stat.txt
+perf-test.txt DONE
+perf-timechart.txt DONE
+perf-top.txt
+perf-trace.txt
+perf.txt DONE
+perf-version.txt DONE
+security.txt
+tips.txt Nice :-)
+topdown.txt
+
